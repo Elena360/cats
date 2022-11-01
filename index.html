@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cats</title>
+    <script src="func.js"></script>
+</head>
+
+<body>
+    <nav class="dashboard">
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+        <div class="btn"></div>
+    </nav>
+
+    <main class="container">
+        <!-- <div class="card">
+            <div class="pic"></div>
+            <div class="name">Kot</div>
+            <div class="rate">
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+                <span>☆</span>
+            </div>
+            <div class="age">13</div>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div> -->
+    </main>
+    <div class="popup-wrapper active">
+        <div class="popup" data-type="card">
+            <div class="close">+</div>
+            <div class="content"></div>
+        </div>
+        <div class="popup active" data-type="add">
+            <div class="close">+</div>
+            <div class="content">
+                <h2>Добавить кота</h2>
+            </div>
+                <form>
+                    <!-- .row*7>label[for=i$]+input#i$ -->
+                    <div class="row">
+                        <label for="i1">Имя</label>
+                        <input type="text" id="i1" name="name" required>
+                    </div>
+                    <div class="row">
+                        <label for="i2">Порядковый номер</label>
+                        <input type="number" id="i2" name="id" required min="1">
+                    </div>
+                    <div class="row">
+                        <label for="i3">Ссылка на картинку</label>
+                        <input type="text" id="i3" name="img_link">
+                    </div>
+                    <div class="row">
+                        <label for="i4">Возраст</label>
+                        <input type="number" id="i4" name="age" min="0" max="50">
+                    </div>
+                    <div class="row">
+                        <label for="i5">Рейтинг</label>
+                        <input type="range" id="i5" name="rate" min="0" max="10" value="7">
+                    </div>
+                    <div class="row">
+                        <label for="i6">Описание</label>
+                        <textarea id="i6" name="description"></textarea>
+                    </div>
+                    <button type="submit">Добавить кота</button>
+                    
+                </form>
+            
+        </div>
+        <div class="popup" data-type="info">
+            <div class="close">+</div>
+            <div class="content">
+                <h2>ВНИМАНИЕ</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
